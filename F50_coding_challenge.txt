@@ -1,0 +1,26 @@
+Time Spent: 3 hours
+Key decisions:
+- I chose an array of arrays for the data structure because the board
+itself is like a set of coordinates. The array of arrays made it easy to
+change values from nil to 'x' or 'o'
+- I also chose to keep the board as one class (and not have player classes) since
+there are only 2 players max and they switch their turns. I didn't feel the need
+to make extra classes
+- The hardest part was testing for diagonal wins. Again, the array of arrays allows
+to check diagonals by testing the difference or sum between indexes
+Runtime complexity: O(n^2) it is quadratic because during the checking, I used a nested
+for loop for many of the diagonal checks.
+Overall thoughts:
+- I thought the project was very fun! I've been studying javascript lately so it was fun
+to get back into ruby syntax and remember how much different/simpler the syntax is
+
+additional note:
+- Personally, one of my weaknesses is testing/Rspec. Its something I still want to learn
+but I felt like it would take me longer than the 3 hours inteded if I spent more time
+learning how to implement it. I've tested the app by playing it and it's worked
+in every row/column/diagonal check. I've also put in restrictions on what
+the user can put into the terminal.
+
+- For my project you're going to want install the "highline/import" gem
+  - "gem install highline"
+- you can play the game by using the command "ruby connect4.rb"
